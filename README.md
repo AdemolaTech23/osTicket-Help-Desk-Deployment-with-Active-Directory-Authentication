@@ -47,5 +47,84 @@ User Browser
 - Set DNS to domain controller (192.168.0.10)
 
 ### 2. Web Stack Installation
-Installed required packages:
+Installed required packages: sudo apt install apache2 mariadb-server php libapache2-mod-php php-mysql unzip -y
 
+Verified Apache was running and accessible from a browser.
+
+---
+
+### 3. osTicket Installation
+- Deployed osTicket to `/var/www/html`  
+- Configured database connection  
+- Created administrative account  
+- Completed installer successfully  
+
+Post-install steps:
+- Restricted config file permissions  
+- Removed setup directory  
+
+---
+
+### 4. Active Directory Integration (LDAP)
+- Installed LDAP authentication plugin  
+- Configured connection to domain controller  
+
+Key settings:
+- Domain: lab.local  
+- LDAP Server: 192.168.0.10  
+- Search Base: DC=lab,DC=local  
+
+DNS was required to function correctly for LDAP authentication.
+
+---
+
+## Authentication Flow
+
+User Login  
+→ osTicket Application  
+→ LDAP Plugin  
+→ Active Directory  
+→ Access Granted / Denied  
+
+---
+
+## Issues Encountered
+
+### DNS Resolution Failure
+Initial DNS queries failed, which prevented LDAP authentication from working.
+
+**Resolution:**  
+Configured the server to use the domain controller (192.168.0.10) as its primary DNS server.
+
+---
+
+### LDAP Dependency Errors
+The LDAP plugin initially failed due to missing dependencies.
+
+**Resolution:**  
+Installed required PHP modules and verified correct plugin placement in the osTicket directory.
+
+---
+
+## Result
+
+The system is fully operational and supports:
+
+- Ticket creation and tracking  
+- Administrative ticket management  
+- Role-based access control  
+- Authentication through Active Directory  
+
+This setup reflects a basic enterprise help desk environment where authentication is centralized and services are internally hosted.
+
+---
+
+## Notes
+
+This project focuses on system deployment, service integration, and troubleshooting within a domain-based environment. It is designed to demonstrate practical understanding of how help desk platforms integrate with directory services.
+
+---
+
+## License
+
+This project is licensed under the MIT License.
