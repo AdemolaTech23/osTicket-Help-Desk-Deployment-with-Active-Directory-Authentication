@@ -37,6 +37,17 @@ User Browser
 → LDAP Plugin  
 → Active Directory (DC01)
 
+## Screenshots
+
+### osTicket Dashboard
+![osTicket Dashboard]  (screenshots/dashboard.png)
+
+### Login Page
+![Login Page](screenshots/login.png)
+
+### Apache Web Server Test
+![Apache Default Page](screenshots/apache.png)
+
 ---
 
 ## Deployment Summary
