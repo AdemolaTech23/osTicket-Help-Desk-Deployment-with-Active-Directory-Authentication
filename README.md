@@ -38,15 +38,15 @@ User Browser
 → Active Directory (DC01)
 
 ## Screenshots
+### osTicket Staff Control Panel
+<img width="960" height="362" alt="image" src="https://github.com/user-attachments/assets/20ba8c7f-d371-42e4-a162-8f00457ad5e9" />
 
-### osTicket Dashboard
-![osTicket Dashboard]  (screenshots/dashboard.png)
 
-### Login Page
-![Login Page](screenshots/login.png)
+### Installation Completed
+<img width="809" height="637" alt="image" src="https://github.com/user-attachments/assets/50301f88-d06b-4935-9f1d-fed233744469" />
 
-### Apache Web Server Test
-![Apache Default Page](screenshots/apache.png)
+### Environment Prerequisites
+<img width="823" height="676" alt="image" src="https://github.com/user-attachments/assets/55a1a23a-e109-496e-ba04-e1841d596c48" />
 
 ---
 
