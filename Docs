@@ -24,7 +24,7 @@ After installing Ubuntu Server in Proxmox, the system was verified and accessed 
 
 Basic tools were installed for system administration: sudo apt install net-tools curl git nmap tcpdump -y
 
-
+![image alt](https://github.com/AdemolaTech23/osTicket-Help-Desk-Deployment-with-Active-Directory-Authentication/blob/4266fc1944d8f5891da2cddbd1a9f1cb41e3ba46/basic%20tool%20installed.png)
 ---
 
 ## 2. Static IP Configuration
