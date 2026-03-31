@@ -22,5 +22,17 @@ The system was configured to simulate a centralized help desk environment with d
 
 After installing Ubuntu Server in Proxmox, the system was verified and accessed using the local administrative account.
 
-Basic tools were installed for system administration:
+Basic tools were installed for system administration: sudo apt install net-tools curl git nmap tcpdump -y
 
+
+---
+
+## 2. Static IP Configuration
+
+The server was initially assigned a DHCP address and then configured with a static IP.
+
+Netplan configuration file: /etc/netplan/50-cloud-init.yaml
+
+Applied configuration: sudo netplan apply
+
+Verification: 
