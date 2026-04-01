@@ -1,5 +1,6 @@
 # osTicket Deployment and Active Directory Integration
 
+
 ## Overview
 
 This document outlines the deployment of osTicket on an Ubuntu server and its integration with Active Directory using LDAP authentication.
