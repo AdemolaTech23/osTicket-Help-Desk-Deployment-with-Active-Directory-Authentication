@@ -128,5 +128,50 @@ curl -L https://github.com/osTicket/osTicket-plugins/archive/refs/heads/develop.
 unzip plugins.zip
 
 
+Copied plugin: sudo cp -r osTicket-plugins-develop/auth-ldap /var/www/html/osticket/include/plugins/
+
+<img width="584" height="262" alt="image" src="https://github.com/user-attachments/assets/9e64ad51-7ffe-4bc6-b9f4-11caca8b19e3" />
+
+<img width="617" height="394" alt="image" src="https://github.com/user-attachments/assets/fe496ba1-557b-4369-ba80-7272b4fc72f4" />
+
+
+Configured in admin panel:
+
+- Domain: lab.local  
+- LDAP Server: 192.168.0.10  
+- Search Base: DC=lab,DC=local
+
+<img width="640" height="513" alt="image" src="https://github.com/user-attachments/assets/2e756e68-bc63-4959-a493-e3507ad506f0" />
+
+
+
+---
+
+## 9. DNS Verification
+
+Verified DNS resolution: nslookup lab.local
+
+
+Confirmed domain controller was resolving correctly.
+
+<img width="581" height="261" alt="image" src="https://github.com/user-attachments/assets/d2c15807-c8cd-4509-8721-a3040e569b6f" />
+
+
+
+---
+
+## 10. Issues Encountered
+
+### DNS Resolution Failure
+- Issue: Name resolution failed
+- Fix: Set DNS server to domain controller (192.168.0.10)
+
+### LDAP Dependency Issues
+- Issue: Plugin errors due to missing dependencies
+- Fix: Installed required PHP extensions
+
+---
+
+
 
 
